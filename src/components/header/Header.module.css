@@ -1,0 +1,137 @@
+.header{
+    display: flex;
+    position: relative;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 75vh;
+    background-image: url(img/background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.headerContent{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 75vh;
+    top:0;
+    left:0;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, transparent 50%, rgba(0,0,0,1) 100%);
+    border-bottom: 8px #232323 solid;
+}
+
+.menuTop{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem 10rem;
+}
+
+.logoContainer{
+
+}
+
+.logo{
+    width: 10rem;
+}
+
+.menu{
+    display: flex;    
+    justify-content: space-between;
+    gap: 2rem;
+    height: fit-content;
+}
+
+.comboBox {
+    display: flex;
+    width: 8rem;
+    justify-content: space-between;
+    padding: 0.3rem 1rem;
+    background-color: #00000066;
+    border: 1px #615F5F solid;
+    border-radius: 5px;
+}
+
+.loginBtn{
+    display: flex;
+    background-color: #E50914;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.headerMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.title{
+    margin: 2rem 0;
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.subtitle , .subscribeIntro{
+    line-height: 2rem;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+.subscribeContainer{
+    display: flex;
+    position: relative;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.subscribeLabel{
+    display: flex;
+    position: absolute;
+    top: 0.3rem;
+    left: 1rem;
+    font-size: 1rem;
+    color: #BAB8A1;
+}
+
+.subscribeInputIdle{
+    display: flex;
+    width: 26rem;
+    height: 100%;
+    padding: 0.3rem 1rem;
+    background-color: #00000066;
+    border: 1px #615F5F solid;
+    border-radius: 5px;
+    color: #BAB8A1;
+}
+
+.subscribeInputActive{
+    display: flex;
+    width: 26rem;
+    height: 100%;
+    padding: 1rem 1rem 0 1rem;
+    vertical-align: bottom;
+    font-size: 1.2rem; 
+    background-color: #00000066;
+    border: 1px #615F5F solid;
+    border-radius: 5px;
+    color: #BAB8A1;
+}
+
+.subscribeBtn{
+    display: flex;
+    background-color: #E50914;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    font-size: 2rem;
+    cursor: pointer;
+}
