@@ -11,7 +11,10 @@ export function Header(){
     const [subscribeLabelHide, setSubscribeLabelHide] = useState('none');
     const [emailInputClassName, setEmailInputClassName ] = useState(style.subscribeInputIdle);
     const [emailInputValue, setEmailInputValue] = useState('');
-    
+    const [langDropdownHide, setLangDropdonHide] = useState(' ' + style.hidden);
+    const [language, setlanguage] = useState('English');
+
+
     function emailGotFocus(){
         setEmailPlaceholder('');
         setSubscribeLabelHide('flex')
@@ -26,7 +29,21 @@ export function Header(){
         
     }
 
+    function langDropdownclick(){
+        langDropdownHide === ' ' + style.hidden ? setLangDropdonHide('') : setLangDropdonHide(' ' + style.hidden);
+    }
 
+    function headerClick(ev){
+
+        if (ev.target.className.length > 0){
+            !ev.target.className.includes('langSelect') && setLangDropdonHide(' ' + style.hidden);
+        }
+     }
+
+     function changeLang(lang){
+        setlanguage(lang);
+     }
+    
     const emailInput = <input className={emailInputClassName} 
                               type='text' 
                               placeholder={EmailPlaceholder} 
@@ -37,17 +54,21 @@ export function Header(){
                        </input>;
 
     return(
-        <div className={style.header}>
+        <div className={style.header} onClick={headerClick}>
             <div className={style.headerContent}>
                 <div className={style.menuTop}>
                     <div className={style.logoContainer}>
                         <img className={style.logo} src={logo} alt='bitflix logo'/>
                     </div>
                     <div className={style.menu}>
-                        <div className={style.comboBox}>
-                            <div><IoLanguageSharp/></div>
-                            <div>English</div>
-                            <div><RxTriangleDown /></div>
+                        <div onClick={langDropdownclick} className={style.comboBox + ' langSelect'}>
+                            <div className='langSelect'><IoLanguageSharp className='langSelect'/></div>
+                            <div className='langSelect'>{language}</div>
+                            <div className='langselect'><RxTriangleDown /></div>
+                        </div>
+                        <div className={style.langDropdown + langDropdownHide}>
+                            <div className={style.langRow} onClick={() => changeLang('English')}>English</div>
+                            <div className={style.langRow} onClick={() => changeLang('Lithuanian')}>Lithuanian</div>
                         </div>
                         <div className={style.loginBtn}>Sign In</div>    
                     </div>

@@ -47,12 +47,17 @@
 
 .comboBox {
     display: flex;
+    position: relative;
     width: 8rem;
     justify-content: space-between;
     padding: 0.3rem 1rem;
     background-color: #00000066;
     border: 1px #615F5F solid;
     border-radius: 5px;
+}
+
+.langSelect{
+    
 }
 
 .loginBtn{
@@ -114,6 +119,7 @@
 
 .subscribeInputActive{
     display: flex;
+    
     width: 26rem;
     height: 100%;
     padding: 1rem 1rem 0 1rem;
@@ -134,4 +140,30 @@
     border-radius: 5px;
     font-size: 2rem;
     cursor: pointer;
+}
+
+.langDropdown {
+    display: block;
+    padding: 4px;
+    position: absolute;
+    margin-top: 2rem;
+    width: 8rem;
+    background-color: #BAB8A1;
+    color:white;
+    border-radius: 5px;
+}
+
+.langRow {
+    padding: 4px 2px;
+    border-radius: 5px;
+    cursor: default;
+}
+
+.langRow:hover {
+    background-color: #232323;
+    
+}
+
+.hidden {
+    display: none;
 }
