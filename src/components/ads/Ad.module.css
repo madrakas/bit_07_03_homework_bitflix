@@ -1,0 +1,43 @@
+.adSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.adContainer {
+    display: flex;
+    justify-content: center;
+    padding: 8rem 0;
+    width: 100%;
+    border-bottom: 8px #232323 solid;
+}
+
+.imgContainer{
+    display: flex;
+    width: 40rem;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40rem;
+}
+
+.header{
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+.text{
+    font-size: 1.5rem;
+}
+
+
+.reverseRow{
+    display: flex;
+    flex-direction: row-reverse;
+}
