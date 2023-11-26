@@ -3,6 +3,8 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
+    border-bottom: 8px #232323 solid;
+    padding-bottom: 4rem;
 }
 
 .title{
