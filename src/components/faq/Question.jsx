@@ -3,12 +3,15 @@ import style from "./Faq.module.css";
 
 export function Question({question, answer}){
     const [answerClassName, setAnswerClassName] = useState(style.answer + ' ' + style.hidden );
+    const [questionIcon, setQuestionIcon] = useState('+');
 
     function answerClassNameUpdate(){
         if (answerClassName === style.answer + ' ' + style.hidden){
             setAnswerClassName(style.answer);
+            setQuestionIcon('-')
         } else{
             setAnswerClassName(style.answer + ' ' + style.hidden);
+            setQuestionIcon('+')
         }
     }
 
@@ -16,7 +19,7 @@ export function Question({question, answer}){
         <>
             <div className={style.question} onClick={answerClassNameUpdate}>
                 <div className={style.questionText}>What is Bitflix?</div>
-                <div className={style.questionExtender}>+</div>
+                <div className={style.questionExtender}>{questionIcon}</div>
             </div>
             <div className={answerClassName}>
                 <p>Bitflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.</p>
