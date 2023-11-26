@@ -11,7 +11,7 @@ export function Footer(){
                 <div className={style.footerRow}><a href="/">Investor Relations</a></div>
                 <div className={style.footerRow}><a href="/">Privacy</a></div>
                 <div className={style.footerRow}><a href="/">Speed Test</a></div>
-                <div className={style.footerRow}><a href="/">Netflix Lithuania</a></div>
+                <div className={style.footerRow}><a href="/">Bitflix Lithuania</a></div>
             </div>
             <div className={style.FooterColumn}>
                 <div className={style.footerRow}><a href="/">Help Center</a></div>
@@ -29,7 +29,7 @@ export function Footer(){
                 <div className={style.footerRow}><a href="/">Media Center</a></div>
                 <div className={style.footerRow}><a href="/">Terms of Use</a></div>
                 <div className={style.footerRow}><a href="/">Contact Us</a></div>
-                <div className={style.footerRow}><a href="/">Only on Netflix</a></div>
+                <div className={style.footerRow}><a href="/">Only on Bitflix</a></div>
             </div>
 
         </div>

@@ -7,7 +7,10 @@ export function Faq(){
             <div className={style.title}>
                 Frequently Asked Questions
             </div>
-            <Question/>
+            <Question />
+            <Question />
+            <Question />
+            <Question />
         </div>
     );
 }
