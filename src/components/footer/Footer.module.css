@@ -1,0 +1,33 @@
+.footerCopntainer{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+a{
+  color: white;
+}
+
+.title{
+    display: flex;
+    width: 80rem;
+    margin-left: calc((100% - 80rem) / 2);
+    margin-right: calc((100% - 80rem) / 2);
+    font-size: 1.2rem;
+}
+
+.FooterColumn{
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 100%;
+}
+
+.footerRow{
+    display: flex;
+    width: 100%;
+    padding-top: 1.5rem;
+    font-size: 1.2rem;
+}
