@@ -1,0 +1,55 @@
+.faqContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.title{
+    width: 80rem;
+    margin: 3rem 0 2rem 0;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.question{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 80rem;
+    
+    background-color: rgb(59, 58, 58);
+    color: white;
+    font-weight: 500;
+    font-size: 2rem;
+    margin-top: 0.5rem;
+}
+
+.questionText{
+    display: flex;
+    width: 100%;
+    padding: 1.5rem 2rem;
+}
+
+.questionExtender{
+    display: flex;
+    width: 4rem;
+    height: fit-content;
+    font-size: 5rem;
+    font-weight: 100;
+}
+
+.answer{
+        width: 80rem;
+        padding: 1.5rem 2rem;
+        background-color: rgb(59, 58, 58);
+        color: white;
+        font-weight: 500;
+        font-size: 2rem;
+        margin-top: 0.1rem;
+}
+
+.hidden{
+    display: none;
+}
