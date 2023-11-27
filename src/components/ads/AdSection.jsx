@@ -1,21 +1,24 @@
 import style from './Ad.module.css';
 import { Ad } from './Ad';
+import data from './data.json'
 
 export function AdSection(){
+    
+    const adsArr = [];
+    for (const ad in data){
+        adsArr.push(data[ad]);
+    }
+    console.log(adsArr);
+    adsArr.map((ad, idx) => (console.log(ad.image)));
     return(
         <div className={style.adSection}>
-            <Ad reverseDirection={true} img='1.png' title="Enjoy on your TV" 
-            description="Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more."
-            alt="it's an ad!"/>
-            <Ad reverseDirection={false} img='2.png' title="Enjoy on your TV" 
-            description="Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more."
-            alt="it's an ad!"/>
-            <Ad reverseDirection={true} img='3.png' title="Enjoy on your TV" 
-            description="Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more."
-            alt="it's an ad!"/>
-            <Ad reverseDirection={false} img='4.png' title="Enjoy on your TV" 
-            description="Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more."
-            alt="it's an ad!"/>
+            {adsArr.map((ad, idx) => (
+                <Ad key={idx}
+                    reverseDirection={(idx % 2 > 0)}
+                    img={ad.image} 
+                    title={ad.title}
+                    description={ad.description} />))
+            }
         </div>
     );
 }
