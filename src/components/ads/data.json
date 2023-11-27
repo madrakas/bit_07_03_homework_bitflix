@@ -1,0 +1,23 @@
+{   
+    "add1":{
+        "image": "1.png",
+        "title": "Enjoy on your TV",
+        "description": "Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more."
+    },
+    "add2":{
+        "image": "2.png",
+        "title": "Enjoy on your TV",
+        "description": "Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more."
+    },
+    "add3":{
+        "image": "3.png",
+        "title": "Enjoy on your TV",
+        "description": "Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more."
+    },
+    "add4":{
+        "image": "4.png",
+        "title": "Enjoy on your TV",
+        "description": "Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more."
+    }
+    
+}
