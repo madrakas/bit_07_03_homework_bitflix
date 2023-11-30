@@ -1,20 +1,16 @@
-import { IoLanguageSharp } from 'react-icons/io5';
 import { IoIosArrowForward } from "react-icons/io";
-import { RxTriangleDown } from "react-icons/rx";
 import logo from './img/logo.png';
 import style from './Header.module.css';
 import { useState } from 'react';
+import { LangSelector } from "../langselector/LangSelector";
 
 
-export function Header(){
+export function Header({ langDropdownHide, updateLangDropDownHide }){
     const [EmailPlaceholder, setEmailPlaceholder] = useState('Email address');
     const [subscribeLabelHide, setSubscribeLabelHide] = useState('none');
     const [emailInputClassName, setEmailInputClassName ] = useState(style.subscribeInputIdle);
     const [emailInputValue, setEmailInputValue] = useState('');
-    const [langDropdownHide, setLangDropdonHide] = useState(' ' + style.hidden);
-    const [language, setlanguage] = useState('English');
-
-
+    
     function emailGotFocus(){
         setEmailPlaceholder('');
         setSubscribeLabelHide('flex')
@@ -22,27 +18,14 @@ export function Header(){
     }
     function emaillLostFocus(){
         if (emailInputValue === ''){
-            setEmailPlaceholder('Email address');
+            setEmailPlaceholder('Email address' );
             setSubscribeLabelHide('none')
             setEmailInputClassName(style.subscribeInputIdle);
         }
         
     }
 
-    function langDropdownclick(){
-        langDropdownHide === ' ' + style.hidden ? setLangDropdonHide('') : setLangDropdonHide(' ' + style.hidden);
-    }
 
-    function headerClick(ev){
-
-        if (ev.target.className.length > 0){
-            !ev.target.className.includes('langSelect') && setLangDropdonHide(' ' + style.hidden);
-        }
-     }
-
-     function changeLang(lang){
-        setlanguage(lang);
-     }
     
     const emailInput = <input className={emailInputClassName} 
                               type='text' 
@@ -54,22 +37,14 @@ export function Header(){
                        </input>;
 
     return(
-        <div className={style.header} onClick={headerClick}>
+        <div className={style.header}>
             <div className={style.headerContent}>
                 <div className={style.menuTop}>
                     <div className={style.logoContainer}>
                         <img className={style.logo} src={logo} alt='bitflix logo'/>
                     </div>
                     <div className={style.menu}>
-                        <div onClick={langDropdownclick} className={style.comboBox + ' langSelect'}>
-                            <div className='langSelect'><IoLanguageSharp className='langSelect'/></div>
-                            <div className='langSelect'>{language}</div>
-                            <div className='langselect'><RxTriangleDown /></div>
-                        </div>
-                        <div className={style.langDropdown + langDropdownHide}>
-                            <div className={style.langRow} onClick={() => changeLang('English')}>English</div>
-                            <div className={style.langRow} onClick={() => changeLang('Lithuanian')}>Lithuanian</div>
-                        </div>
+                        <LangSelector  langDropdownHide={langDropdownHide} updateLangDropDownHide={updateLangDropDownHide} />
                         <div className={style.loginBtn}>Sign In</div>    
                     </div>
                     

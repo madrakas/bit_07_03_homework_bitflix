@@ -8,8 +8,7 @@ export function AdSection(){
     for (const ad in data){
         adsArr.push(data[ad]);
     }
-    console.log(adsArr);
-    adsArr.map((ad, idx) => (console.log(ad.image)));
+    
     return(
         <div className={style.adSection}>
             {adsArr.map((ad, idx) => (

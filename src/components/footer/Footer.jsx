@@ -1,6 +1,7 @@
+import { LangSelector } from '../langselector/LangSelector';
 import style from './Footer.module.css' ;
 
-export function Footer(){
+export function Footer({langDropdownHide, updateLangDropDownHide}){
     return(
         <div className={style.footerCopntainer}>
             <div className={style.title}>
@@ -11,6 +12,7 @@ export function Footer(){
                 <div className={style.footerRow}><a href="/">Investor Relations</a></div>
                 <div className={style.footerRow}><a href="/">Privacy</a></div>
                 <div className={style.footerRow}><a href="/">Speed Test</a></div>
+                <div className={style.footerRow}><LangSelector langDropdownHide={langDropdownHide} updateLangDropDownHide={updateLangDropDownHide}/></div>
                 <div className={style.footerRow}><a href="/">Bitflix Lithuania</a></div>
             </div>
             <div className={style.FooterColumn}>

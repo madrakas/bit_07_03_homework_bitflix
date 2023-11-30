@@ -6,14 +6,8 @@ export function Question({question, answer}){
     const [questionIcon, setQuestionIcon] = useState('+');
     const answersArr = answer.split('\n');
 
-    console.log(answer);
-    console.log('####');
-    console.log(answersArr);
-
     const formattedAnswer =answersArr.map(answer => (<p> {answer} </p>));
     
-    console.log(formattedAnswer);
-
     function answerClassNameUpdate(){
         if (answerClassName === style.answer + ' ' + style.hidden){
             setAnswerClassName(style.answer);
