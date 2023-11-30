@@ -1,3 +1,4 @@
+import { SubscribeForm } from '../subscribeForm/SubscribeForm';
 import style from './Faq.module.css';
 import { Question } from './Question';
 import data from './data.json';
@@ -17,6 +18,8 @@ export function Faq(){
                           question={q.question} 
                           answer={q.answer}
                 />))}
+        
+        <SubscribeForm />
         </div>
     );
 }
