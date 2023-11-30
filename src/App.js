@@ -29,8 +29,6 @@ function App() {
     setLangDropdownHide2(newValue);
   }
   
-
-
   return (
     <div className="App" onClick={appClick}>
      <Header langDropdownHide={langDropdownHide} updateLangDropDownHide={updateLangDropDownHide}/>
