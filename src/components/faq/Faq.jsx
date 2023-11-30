@@ -7,7 +7,6 @@ export function Faq(){
     for (const q in data){
         questions.push(data[q]);
     }
-console.log(questions)
     return(
         <div className={style.faqContainer}>
             <div className={style.title}>
