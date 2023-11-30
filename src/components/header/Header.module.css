@@ -69,14 +69,14 @@
 
 .title{
     margin: 2rem 0;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 800;
 }
 
 .subtitle {
     line-height: 2rem;
-    font-size: 1.2rem;
-    font-weight: 700;
+    font-size: 1.6rem;
+    font-weight: 500;
 }
 
 .hidden {
