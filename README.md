@@ -43,7 +43,8 @@ View deployed result on [my github](https://madrakas.github.io/bit_07_03_homewor
 ## 🎯 Project features/goals
 
 *   Learn:
-    *   React Use hooks, and props.
+    *   React design
+    *   React useState
     
 ## 🧰 Getting Started
 
@@ -104,4 +105,3 @@ Distributed under the MIT License. See LICENSE.txt for more information.
 
 ## 🔗 Other resources
 [Create React App](https://create-react-app.dev/)
-
