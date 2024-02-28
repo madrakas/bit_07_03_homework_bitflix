@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/bit_07_03_homework_bitflix/static/css/main.36d0c3ad.css",
+    "main.js": "/bit_07_03_homework_bitflix/static/js/main.18b29cb1.js",
+    "static/media/4.png": "/bit_07_03_homework_bitflix/static/media/4.de53a85ab47764e4297a.png",
+    "static/media/3.png": "/bit_07_03_homework_bitflix/static/media/3.8f36ce93171e778442f8.png",
+    "static/media/1.png": "/bit_07_03_homework_bitflix/static/media/1.2097663003e635272f1d.png",
+    "static/media/2.png": "/bit_07_03_homework_bitflix/static/media/2.be2b5fc6e9670aa245cf.png",
+    "static/media/background.jpg": "/bit_07_03_homework_bitflix/static/media/background.b721be03d74152d5f632.jpg",
+    "index.html": "/bit_07_03_homework_bitflix/index.html",
+    "main.36d0c3ad.css.map": "/bit_07_03_homework_bitflix/static/css/main.36d0c3ad.css.map",
+    "main.18b29cb1.js.map": "/bit_07_03_homework_bitflix/static/js/main.18b29cb1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.36d0c3ad.css",
+    "static/js/main.18b29cb1.js"
+  ]
+}
